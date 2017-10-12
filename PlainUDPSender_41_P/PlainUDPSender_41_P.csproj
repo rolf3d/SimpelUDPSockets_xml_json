@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D4C8F8C-084F-4032-82E9-6B0FED4F3C49}</ProjectGuid>
+    <ProjectGuid>{5FF30B63-836A-49FC-B3B0-E2E4E448AFA9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PlainUDPReceiver_41_P</RootNamespace>
-    <AssemblyName>PlainUDPReceiver_41_P</AssemblyName>
+    <RootNamespace>PlainUDPSender_41_P</RootNamespace>
+    <AssemblyName>PlainUDPSender_41_P</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,10 +44,16 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UDPReceiver.cs" />
+    <Compile Include="UDPSender.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModelLib\ModelLib.csproj">
+      <Project>{5b7f8dd5-841b-45d3-bee0-07b2cb26b00a}</Project>
+      <Name>ModelLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
